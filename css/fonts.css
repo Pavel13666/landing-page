@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'athelas';
+    src: url('../fonts/athelas/athelas-bold.woff2') format('woff2'),
+    url('../fonts/athelas/athelas-bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Akzidenz';
+    src: url('../fonts/Akzidenz.woff2') format('woff2');
+}
+
+.desc-1{
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 40px;
+    font-family: 'Akzidenz';
+    color: #526059;
+}

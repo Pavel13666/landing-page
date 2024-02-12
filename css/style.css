@@ -1,0 +1,170 @@
+body{
+    background-color: #1B1F1D;
+}
+
+.btn{
+   color: white;
+   text-decoration: none;
+   font-family: 'Akzidenz';
+   font-size: 22px;
+   font-weight: 300;
+   line-height: 60px;
+   position: relative; 
+}
+
+.btn::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s;
+}
+
+.btn:hover::after{
+    width: 100%;
+}
+
+.tooltip{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #313C35;
+}
+
+.tooltip::after{
+    content: 'Altrüus is a fun, emotional and social way to send and receive gifts from both national.';
+    display: block;
+    position: absolute;
+    background-color: #313C35;
+    color: #8E9C95;
+    font-size: 10px;
+    width: 200px;
+    padding: 10px 12px;
+    border-radius: 5px;
+    font-family: 'Akzidenz';
+    line-height: 13px;
+    font-weight: 300;
+    text-align: left;
+    top: 25px;
+    left: -29px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover::after{
+    opacity: 1;
+}
+
+.hero-section .container{
+    width: 1253px;
+    margin: 0 auto;
+}
+
+.hero-section .title-wrap{
+    font-family: 'athelas';
+    font-weight: 700;
+    font-size: 166px;
+    line-height: 186px;
+    letter-spacing: -5px;
+}
+
+.hero-section .title-top{
+    color: #FFFFFF;
+}
+
+.hero-section .title-h1{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-section .title-down{
+    color: #526059;
+    width: max-content;
+    text-align: right;
+    align-self: flex-end;
+    position: relative;
+}
+
+.hero-section .title-down::after{
+    content: '';
+    display: block;
+    width: 150px;
+    height: 4px;
+    background-color: #526059;
+    position: absolute;
+    left: -190px;
+    top: calc(186px/2 - 4px);
+}
+
+.hero-section img{
+    width: 100%;
+    display: block;
+    height: auto;
+    object-fit: contain;
+}
+
+.future-section{
+    margin-top: 150px;
+    padding-bottom: 174px;
+}
+
+.future-section .container{
+    width: 1091px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.future-section .right-wrap-title{
+    font-weight: 300;
+    font-family: 'Akzidenz';
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: -0.4px;
+    color: #FFFFFF;
+}
+
+.future-section .list-item-title,
+.future-section .list-item-text{
+    font-family: 'Akzidenz';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+    color: #526059;
+}
+
+.future-section .list-item-text{
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+.future-section .list-item-title{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.future-section .right-wrap{
+    width: 703px;
+}
+
+.future-section .left-wrap .list{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    width: 181px;
+}
+
+.future-section .right-wrap-text{
+    margin-top: 43px;
+    margin-bottom: 40px;
+}
