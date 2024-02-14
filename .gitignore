@@ -1,0 +1,12 @@
+node_modules
+dist
+package-lock.json
+yarn-error.log
+build
+.firebase
+firebase-debug.log
+
+.yalc
+yalc.lock
+app/sitemap/contentfulCopyright/*/json/*.json
+app/sitemap/contentfulCopyright/*/json/listPosts/*.json
