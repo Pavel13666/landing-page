@@ -304,3 +304,51 @@ body{
 .tiny-section{
     padding-bottom: 158px;
 }
+
+.info-section .container{
+    margin: 0 auto;
+    width: 649px;
+    height: 230px;
+    flex-direction: column;
+}
+
+.info-section .top-wrap{
+    width: 77px;
+    height: 10px;
+}
+
+.info-section .center-wrap{
+    width: 649px;
+    height: 144px;
+}
+
+.info-section .center-text{
+    font-family: 'Akzidenz';
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: -0.4px;
+    align-content: center;
+    color: #8E9C95;
+    padding-top: 29px;
+    padding-bottom: 23px;
+    text-align: center;
+}
+
+.info-section .bottom-wrap{
+    width: 649px;
+    height: 24px;
+}
+
+.info-section .bottom-text{
+    font-family: 'Akzidenz';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    color: #8E9C95;
+    text-align: center;
+}
+
+.info-section{
+    padding-bottom: 154px;
+}
