@@ -185,15 +185,12 @@ body{
     margin-top: 120px;
 }
 
-.text-with-title{
-    width: 1047px;
-    margin: 0 auto;
-}
 
 .text-with-title .container{
+    width: 1047px;
+    margin: 0 auto;
     margin-top: 156px;
     display: flex;
-    align-content: space-between;
     justify-content: space-between;
 }
 
@@ -257,3 +254,42 @@ body{
     height: 640px;
 }
 
+.text-with-subject .container{
+    display: flex;
+    margin: 0 auto;
+    width: 1104px;
+    height: 280px;
+    justify-content: space-between;
+}
+
+.text-with-subject .title-wrap{
+    width: 310px;
+    height: 221px;
+}
+
+.text-with-subject .tittle-h3{
+    font-family: 'Akzidenz';
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: -0.4px;
+    color: white;
+    padding-top: 19px;
+}
+
+.text-with-subject .desc-wrap{
+    width: 716px;
+    height: 280px;
+}
+
+.text-with-subject .desc{
+    font-family: 'Akzidenz';
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 40px;
+    color: #8E9C95;
+}
+
+.text-with-subject{
+    padding-bottom: 188px;
+}
