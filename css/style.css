@@ -293,3 +293,14 @@ body{
 .text-with-subject{
     padding-bottom: 188px;
 }
+
+.tiny-section .container{
+    margin: 0 auto;
+    display: flex;
+    width: 1232px;
+    height: 800px;
+}
+
+.tiny-section{
+    padding-bottom: 158px;
+}
