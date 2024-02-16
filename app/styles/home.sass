@@ -1,4 +1,5 @@
 @import 'base.sass'
+
 .btn
     color: white
     text-decoration: none
@@ -7,7 +8,7 @@
     font-weight: 300
     line-height: 60px
     position: relative
-    ::after
+    &::after
         content: ''
         display: block
         position: absolute
@@ -15,8 +16,21 @@
         height: 2px
         background-color: white
         transition: width 0.3s
-:hover::after
-    width: 100%
+    &:hover
+        color: #b5412c
+        &::after
+            width: 100%
+
+
+
+
+.desc-1
+    font-size: 22px
+    font-weight: 300
+    line-height: 40px
+    font-family: 'Akzidenz'
+    color: #526059
+
 
 .tooltip
     position: relative
@@ -30,7 +44,7 @@
     height: 12px
     border-radius: 50%
     background-color: #313C35
-    ::after
+    &::after
         content: 'Altrüus is a fun, emotional and social way to send and receive gifts from both national.'
         display: block
         position: absolute
@@ -48,8 +62,8 @@
         left: -29px
         opacity: 0
         transition: opacity 0.3s
-:hover::after
-    opacity: 1
+    &:hover::after
+        opacity: 1
 
 .hero-section
     .container
@@ -115,10 +129,6 @@ body
     .list-item-text
         color: #FFFFFF
         margin-top: 10px
-    .list-item-title
-        display: inline-flex
-        align-items: center
-        gap: 10px
     .right-wrap
         width: 703px
     .left-wrap .list
@@ -158,7 +168,10 @@ body
         color: #FFFFFF
     .title-wrap
         width: 329px
-        height: 144px
+        img
+            display: block
+            height: auto
+            object-fit: contain
     .title-h3
         padding-top: 19px
     .desc-wrap
@@ -235,10 +248,17 @@ body
         margin: 0 auto
         width: 649px
         height: 230px
+        display: flex
+        justify-content: center
+        align-items: center
         flex-direction: column
     .top-wrap
         width: 77px
         height: 10px
+        img
+            display: block
+            height: auto
+            object-fit: contain
     .center-wrap
         width: 649px
         height: 144px
