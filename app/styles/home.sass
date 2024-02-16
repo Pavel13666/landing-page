@@ -1,4 +1,55 @@
 @import 'base.sass'
+.btn
+    color: white
+    text-decoration: none
+    font-family: 'Akzidenz'
+    font-size: 22px
+    font-weight: 300
+    line-height: 60px
+    position: relative
+    ::after
+        content: ''
+        display: block
+        position: absolute
+        width: 0
+        height: 2px
+        background-color: white
+        transition: width 0.3s
+:hover::after
+    width: 100%
+
+.tooltip
+    position: relative
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    color: white
+    font-size: 6px
+    width: 12px
+    height: 12px
+    border-radius: 50%
+    background-color: #313C35
+    ::after
+        content: 'Altrüus is a fun, emotional and social way to send and receive gifts from both national.'
+        display: block
+        position: absolute
+        background-color: #313C35
+        color: #8E9C95
+        font-size: 10px
+        width: 200px
+        padding: 10px 12px
+        border-radius: 5px
+        font-family: 'Akzidenz'
+        line-height: 13px
+        font-weight: 300
+        text-align: left
+        top: 25px
+        left: -29px
+        opacity: 0
+        transition: opacity 0.3s
+:hover::after
+    opacity: 1
 
 .hero-section
     .container
@@ -10,3 +61,205 @@
         font-size: 166px
         line-height: 186px
         letter-spacing: -5px
+    .title-top
+        color: #FFFFFF
+    .title-h1
+        display: flex
+        flex-direction: column
+    .title-down
+        color: #526059
+        width: max-content
+        text-align: right
+        align-self: flex-end
+        position: relative
+    .title-down::after
+        content: ''
+        display: block
+        width: 150px
+        height: 4px
+        background-color: #526059
+        position: absolute
+        left: -190px
+        top: calc(186px/2 - 4px)
+    img
+        width: 100%
+        display: block
+        height: auto
+        object-fit: contain
+
+body
+    background-color: #1B1F1D
+
+.future-section
+    margin-top: 150px
+    padding-bottom: 174px
+    .container
+        width: 1091px
+        margin: 0 auto
+        display: flex
+        justify-content: space-between
+    .right-wrap-title
+        font-weight: 300
+        font-family: 'Akzidenz'
+        font-size: 32px
+        line-height: 48px
+        letter-spacing: -0.4px
+        color: #FFFFFF
+    .list-item-title,
+    .list-item-text
+        font-family: 'Akzidenz'
+        font-weight: 300
+        font-size: 18px
+        line-height: 23px
+        color: #526059
+    .list-item-text
+        color: #FFFFFF
+        margin-top: 10px
+    .list-item-title
+        display: inline-flex
+        align-items: center
+        gap: 10px
+    .right-wrap
+        width: 703px
+    .left-wrap .list
+        display: flex
+        flex-direction: column
+        gap: 48px
+        width: 181px
+    .right-wrap-text
+        margin-top: 43px
+        margin-bottom: 40px
+
+.small-section
+    .container
+        width: 1440px
+        margin: 0 auto
+    .center-wrap
+        display: flex
+        justify-content: center
+    .bottom-wrap
+        display: flex
+        justify-content: space-between
+        margin-top: 120px
+
+.text-with-title
+    .container
+        width: 1047px
+        margin: 0 auto
+        margin-top: 156px
+        display: flex
+        justify-content: space-between
+    .title-h3
+        font-family: 'Akzidenz'
+        font-weight: 300
+        font-size: 32px
+        line-height: 48px
+        letter-spacing: 0.4px
+        color: #FFFFFF
+    .title-wrap
+        width: 329px
+        height: 144px
+    .title-h3
+        padding-top: 19px
+    .desc-wrap
+        width: 659px
+        height: 320px
+    .desc
+        font-family: 'Akzidenz'
+        font-weight: 300
+        font-size: 22px
+        line-height: 40px
+        color: #8E9C95
+
+.medium-section
+    .container
+        width: 1047px
+        margin: 0 auto
+    .center-wrap
+        display: flex
+        justify-content: center
+        margin-top: 156px
+    .bottom-wrap
+        display: flex
+        justify-content: center
+        margin-top: 120px
+        margin-bottom: 156px
+    .bottom-wrap-left
+        width: 428px
+        height: 560px
+        padding-right: 162px
+    .bottom-wrap-right
+        width: 850px
+        height: 640px
+
+.text-with-subject
+    padding-bottom: 188px
+    .container
+        display: flex
+        margin: 0 auto
+        width: 1104px
+        height: 280px
+        justify-content: space-between
+    .title-wrap
+        width: 310px
+        height: 221px
+    .tittle-h3
+        font-family: 'Akzidenz'
+        font-weight: 300
+        font-size: 32px
+        line-height: 48px
+        letter-spacing: -0.4px
+        color: white
+        padding-top: 19px
+    .desc-wrap
+        width: 716px
+        height: 280px
+    .desc
+        font-family: 'Akzidenz'
+        font-weight: 300
+        font-size: 22px
+        line-height: 40px
+        color: #8E9C95
+
+.tiny-section
+    padding-bottom: 158px
+    .container
+        margin: 0 auto
+        display: flex
+        width: 1232px
+        height: 800px
+
+.info-section
+    padding-bottom: 154px
+    .container
+        margin: 0 auto
+        width: 649px
+        height: 230px
+        flex-direction: column
+    .top-wrap
+        width: 77px
+        height: 10px
+    .center-wrap
+        width: 649px
+        height: 144px
+    .center-text
+        font-family: 'Akzidenz'
+        font-weight: 300
+        font-size: 32px
+        line-height: 48px
+        letter-spacing: -0.4px
+        align-content: center
+        color: #8E9C95
+        padding-top: 29px
+        padding-bottom: 23px
+        text-align: center
+    .bottom-wrap
+        width: 649px
+        height: 24px
+    .bottom-text
+        font-family: 'Akzidenz'
+        font-weight: 300
+        font-size: 18px
+        line-height: 24px
+        color: #8E9C95
+        text-align: center
