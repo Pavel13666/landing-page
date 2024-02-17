@@ -28,7 +28,6 @@
     font-family: 'Akzidenz'
     color: #526059
 
-
 .tooltip
     position: relative
     display: inline-flex
@@ -93,7 +92,7 @@
         left: gem(-190)
         top: calc(#{gem(186)}/2 - #{gem(4)})
     img
-        width: 100%
+        width: gem(1232)
         display: block
         height: auto
         object-fit: contain
@@ -145,11 +144,16 @@ body
     .center-wrap
         display: flex
         justify-content: center
+        img
+            width: gem(1232)
     .bottom-wrap
         display: flex
         justify-content: space-between
         margin-top: gem(120)
-
+        .left
+            width: gem(850)
+        .right
+            width: gem(428)
 
 .text-with-title
     .container
@@ -192,6 +196,8 @@ body
         display: flex
         justify-content: center
         margin-top: gem(156)
+        img
+            width: gem(1232)
     .bottom-wrap
         display: flex
         justify-content: center
@@ -212,7 +218,6 @@ body
         margin: 0 auto
         display: flex
         width: gem(1232)
-        height: gem(800)
 
 .info-section
     padding-bottom: gem(154)
