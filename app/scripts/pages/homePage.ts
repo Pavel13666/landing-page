@@ -15,6 +15,7 @@ export default class HomePage extends CommonPage {
         Section,
         Section,
         Section,
+        Section,
         Section
     ];
 
