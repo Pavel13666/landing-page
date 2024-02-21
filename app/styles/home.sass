@@ -296,6 +296,8 @@ body
         font-size: gem(32)
         line-height: gem(48)
         color: #8E9C95
+        text-indent: gem(50)
+        text-align: left
     .title-list
         width: gem(925)
         margin-top: gem(72)
@@ -304,6 +306,16 @@ body
         gap: gem(56)
         .title-item
             width: gem(925)
+            position: relative
+            &::before
+                content: ''
+                display: block
+                position: absolute
+                left: 0
+                width: gem(30)
+                height: gem(2)
+                background-color: #8E9C95
+                top: gem(20)
 
 .wide-section
     padding-bottom: gem(168)

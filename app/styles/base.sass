@@ -55,8 +55,8 @@ section
 
 .container
     position: relative
-    width: var(--container-width)
-    min-width: var(--container-width)
+    width: 100%
+    min-width: auto
     margin: 0 auto
 
 .row
@@ -84,7 +84,7 @@ section
     opacity: 0
     transition: opacity 0.4s ease
     &Loaded
-         opacity: 1
+        opacity: 1
 
 input
     &::-webkit-input-placeholder,
@@ -119,7 +119,6 @@ button[type='submit']
     body
         &.modal-active
             position: fixed
-
 
     .xxs-visible
         display: block
