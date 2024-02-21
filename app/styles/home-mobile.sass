@@ -8,12 +8,73 @@
             font-family: 'athelas'
             font-weight: 700
             font-size: gem(48)
-            line-height: gem(48)
+            line-height: gem(54)
+            letter-spacing: gem(-3.5)
+        .title-down
+            text-align: left
+            align-self: flex-start
+            &::after
+                display: none
+
     .future-section
         .container
             flex-direction: column
+            width: 100%
         .left-wrap
+            .list-item
+                &:nth-child(2n)
+                    width: gem(79)
+                &:nth-child(2n+1)
+                    width: gem(128)
             .list
                 flex-direction: row
                 flex-wrap: wrap
+                width: gem(260)
+                margin: 0 auto
+                gap: gem(12)
+
+    .small-section
+        padding-bottom: gem(150)
+        .container
+            width: 100%
+            .center-wrap
+                justify-content: center
+                img
+                    width: gem(260)
+            .bottom-wrap
+                margin-top: gem(48)
+                flex-direction: column
+                gap: gem(48)
+                .left,
+                .right
+                    width: gem(260)
+                .left
+                    order: 2
+                    align-self: flex-end
+                .right
+                    order: 1
+
+    .text-with-title
+        .container
+            width: gem(260)
+            flex-direction: column
+            justify-content: flex-start
+            gap: gem(10)
+        .title-h3
+            font-size: gem(16)
+            line-height: gem(24)
+            letter-spacing: gem(-0.22)
+        .title-wrap
+            width: 100%
+            &.small
                 width: 100%
+            img
+                width: gem(49)
+        .title-h3
+            padding-top: gem(19)
+        .desc-wrap
+            width: 100%
+            height: auto
+        .desc
+            font-size: gem(12)
+            line-height: gem(24)
