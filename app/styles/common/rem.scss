@@ -35,6 +35,10 @@
 // '0' specified for height means that this breakpoint doesn't care about screen height in design
 @include remBase(1440, 0);
 
+@media all and (max-width: 480px) {
+    // @include remBase(375, 0); // mobile
+    @include remBase(375, 0); // mobile
+}
 // Usually, base breakpoint is for desktop, so other (smaller) bps are specified via 'max-width' media query
 
 // TODO Add breakpoints like this:
