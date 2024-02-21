@@ -329,6 +329,11 @@ body
             position: absolute
             right: 0
             top: 0
+            img
+                width: 100%
+                height: 100%
+                display: block
+                object-fit: cover
         .desc-wrap
             width: gem(1440)
             background-color: #313C35
@@ -357,13 +362,13 @@ body
                     .title-list
                         display: flex
                         flex-wrap: wrap
-                        box-sizing: border-box
                         justify-content: space-around
                         gap: gem(30)
                         .title-item
                             width: gem(144)
                             .img-item
                                 width: gem(28)
+                                display: block
                             .caption
                                 width: gem(120)
                                 font-family: 'Akzidenz'
