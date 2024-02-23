@@ -10,6 +10,11 @@
             font-size: gem(48)
             line-height: gem(54)
             letter-spacing: gem(-3.5)
+        img
+            width: gem(260)
+            margin: 0 auto
+            display: block
+            margin-top: gem(28)
         .title-down
             text-align: left
             align-self: flex-start
@@ -17,6 +22,8 @@
                 display: none
 
     .future-section
+        margin-top: gem(48)
+        padding-bottom: gem(69)
         .container
             flex-direction: column
             width: 100%
@@ -32,9 +39,31 @@
                 width: gem(260)
                 margin: 0 auto
                 gap: gem(12)
+        .right-wrap
+            width: gem(260)
+            margin: 0 auto
+            .right-wrap-title
+                margin-top: gem(47)
+                font-size: gem(16)
+                line-height: gem(24)
+                letter-spacing: gem(-0.22)
+            .left-wrap .list
+                display: flex
+                flex-direction: column
+                gap: gem(48)
+                width: gem(181)
+            .right-wrap-text
+                font-size: gem(12)
+                line-height: gem(22)
+                margin-top: gem(10)
+                margin-bottom: gem(36)
+            .btn
+                display: block
+                font-size: gem(12)
+                line-height: gem(15.42)
 
     .small-section
-        padding-bottom: gem(150)
+        padding-bottom: gem(72)
         .container
             width: 100%
             .center-wrap
@@ -78,3 +107,36 @@
         .desc
             font-size: gem(12)
             line-height: gem(24)
+
+    .medium-section
+        .container
+            width: 100%
+            margin: 0 auto
+            .center-wrap
+                margin-top: gem(64)
+                img
+                    width: gem(260)
+            .bottom-wrap
+                margin-top: gem(48)
+                margin-bottom: gem(72)
+                display: flex
+                flex-direction: column
+                gap: gem(48)
+            .bottom-wrap-left
+                width: gem(260)
+                height: gem(344)
+                order: 2
+                padding-right: 0
+            .bottom-wrap-right
+                order: 1
+                width: gem(260)
+                height: gem(192)
+                align-self: flex-end
+
+    .tiny-section
+        padding-top: gem(64)
+        padding-bottom: gem(72)
+        .container
+            img
+                margin: 0 auto
+                width: gem(260)
